@@ -1,6 +1,6 @@
 /*Importa fonte do google fonts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 
 /*Reset*/
 
@@ -22,9 +22,7 @@
 
 .main-nav{
     width: 100%; /*Ocupar toda area disponivel*/
-    max-width: 600px; /*trava a largura maxima que defini para o projeto*/
-    padding: 0 16px; /*primeiro é cima e baixo, segundo esquerda e direita*/
-}
+   }
 
 .header-list-container{
  display: flex; /*colocar os elementos na mesma linha*/
@@ -51,4 +49,29 @@ hr{
 .nav-item:hover{
     color: white;
     transition: 0.2s;
+}
+
+.main.about{
+    padding: 40px 0px 64px;
+}
+
+.container{
+   max-width: 600px; 
+   padding: 0 16px;
+   margin: 0 auto;
+}
+
+.about-title{
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.about-image{
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 200px;
+    height: auto;
 }
