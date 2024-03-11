@@ -5,9 +5,24 @@
 /*Reset*/
 
 *{
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+li{
+    list-style-type: none; /*retira as bolinhas dos elementos*/
+}
+
+/*Criação de Variaveis no root do CSS*/
+
+ :root{
+ --blue: #3b43d4;
+ --gray:#555555;
+ --skyblue:#00BFFF;
+ --sliver:#c0c0c0;
+ --red:#ff0000;
+ --white:#ffffff;
+ --darkgray:#959595;
 }
 
 /*Header*/
@@ -70,8 +85,49 @@ hr{
 }
 
 .about-image{
-    float: left;
-    margin: 0 20px 10px 0;
-    width: 200px;
-    height: auto;
+    float: left; /*alinha a imagem esquerda e o texto a direita*/
+    margin: 0 20px 10px 0; /* 0 topo, 20 direita, 10 baixo 0 esquerda*/
+    /*diminuir o tamanho das imagens*/
+    width: 200px; /*largura*/
+    height: auto; /*evita a distoçao da imagem*/
+}
+
+.about-description{
+    color: var(--gray); /*utiliza variavel de cor criado no root*/
+    text-align: justify; /*justifica o texto*/
+}
+
+/*footer*/
+
+.main-footer{
+    background-color: var(--skyblue); /*aplicar cor no fundo do rodape*/
+    padding: 15px 0;
+}
+
+.main-footer-container{
+    display: flex; /*deixar tudo  na mesma linha*/
+    align-items: center; /*alinha todos os elementos*/
+    justify-content: space-between; /*colar nome de um lado e lista de icones do outro*/
+}
+
+.title-smaller{
+    font-family: "Raleway",sans-serif; /*pegar a fonte importada*/
+    color: var(--blue);
+    font-size: 26px;
+}
+
+.list-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-item{
+    width: 50px;
+    height: 50px;
+    padding: 15px 0;    
+}
+
+.footer-item + .footer-item{
+    margin-left: 16px;
 }
