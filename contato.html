@@ -17,101 +17,112 @@
 <!--Area do Site-->
 <body>
  
-    <!--Cabecalho-->
-    <header>
+    <!--Cabeçalho-->
+<header class="main-header">
     <!--Navegação-->
-    <nav>
+    <nav class="main-nav container">
      <!--Lista não ordenada-->
-    <ul>
+    <ul class="header-list-container">
     <!--Intem na Lista-->
-    <li><!--Logotipo do Site-->
-
+    <li class="nav-item"><!--Logotipo do Site-->
         <a  href="index.html">
        <img src="images/logo.png" alt="logo" height="100" width="100">
     </a> 
     </li>
-    <li>
+    <li class="nav-item">
         <a href="Loja.html">Loja</a>
     </li>
     
-    <li>
+    <li class="nav-item">
         <a href="contato.html">Contato</a>
     </li>
     
-    <li>
+    <li class="nav-item">
         <a href="sobre.html">Sobre</a>
     </li>
+    
     </ul>
+    
+    
     </nav>
-<!---->
-
-</header>
+    <hr>
+    </header>
 
 <main>
-    <h2>Contato</h2>
-    <p>OS Campos com * são de preenchimento obrigatório!</p>
+    <h2 class="title-median">Contato</h2>
+    <p class="contact-text">OS Campos com * são de preenchimento obrigatório!</p>
 
 <!--Corpo do Fromulário-->
-<form>
+<form class="contact">
 
 <!--Campos do Formulario-->
-<label>
+<label class="contact-label">
     Nome*
-    <input type="texto" required>
+    <input class="contact-field" type="text" required>
 </label>
 
-<label>
+<label class="contact-label">
     Email*
-    <input type="email" required>
+    <input  class="contact-field" type="text" required>
 </label>
 
-<label>
+<label class="contact-label">
     Assunto*
-    <select>
+    <select class="contact-field">
+        <option>NewsLetter</option>
         <option>Dúvidas</option>
         <option>Sugestões</option>
         <option>Críticas</option>
     </select>
 </label>
-    Mensagem*
-    <textarea required></textarea>
-</label>
 
-<button type="button">Enviar</button>
+<label class="contact-label">
+    Mensagem*
+    <textarea class="contact-field" required></textarea>
+</label class="contact-label">
+
+<button  class="button-form" type="button">Enviar</button>
 </form>
 
+<div class="contact-maps">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63753.617912296126!2d-41.77186276690507!3d-2.9304018733045205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ec3adcd5926c75%3A0x45351f9daa75bb92!2zUGFybmHDrWJhLCBQSQ!5e0!3m2!1spt-BR!2sbr!4v1709730030897!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                     
+</div>
+
+
  </main> 
         <!--Rodape do Site-->
-    <footer>
-        <div>
-        <h3>Vendas Livres Store - Paloma Carvalho 2024</h3>
-        <ul>
+    <footer class="main-footer">
+        <div class="footer-container">
+    
+         <!--Titulo nivel 3-->
+         
+        <h3 class="title-smaller">Vendas Livres Store - Paloma Carvalho 2024</h3>
+        <ul class="footer-container">
         
-        <li>
+        <li class="footer-item">
         <a href="https://www.facebook.com/" target="_blank">
         <img src="images/facebook.svg" alt="Facebook logo">
         </a>
         </li>
                     
-        <li>
+        <li class="footer-item">
         <a href="https://www.Instagram.com/" target="_blank">
         <img src="images/instagram.svg" alt="Instagram logo">
         </a>
         </li>
                     
-        <li>
+        <li class="footer-item" >
         <a href="https://www.spotfy.com/" target="_blank">
         <img src="images/spotify.svg"  alt="Spotfy logo">
          </a>
         </li>
                            
-         <li>
+         <li class="footer-item">
          <a href="https://www.youtube.com/" target="_blank">
          <img src="images/youtube.svg" alt="Youtube logo">
          </a>
         </li>
+                                     
      </ul>
     
        </div>
