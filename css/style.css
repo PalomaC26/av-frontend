@@ -15,7 +15,7 @@ li{
     list-style-type: none; /*retira as bolinhas dos elementos*/
 }
 
-body{
+body, button, input{
     font: 400 22px "Roboto" , sans-serif;
 }
 
@@ -234,4 +234,51 @@ textarea.contact-field{
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
+    padding-bottom: 30px;
 }
+
+.product{
+    display: flex; /*colocar todos na mesma linha*/
+    flex-direction: column; /*alinhar em coluna, um embaixo do outro*/
+    align-items: center;
+}
+
+.product-title{
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.product-image{
+    width: 320px;
+    height: 220px;
+    margin-bottom: 20px;
+}
+
+.product-price-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.product-price{
+    font-family: "Raleway", sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.button-hover{
+ background-color: var(--skyblue);
+ color: var(--blue);
+ border: 2px solid var(--skyblue);
+ border-radius: 10px ;
+ padding: 4px 2px;
+ font-weight:bold;
+ cursor: pointer;
+}
+
+.button-hover:hover{
+    background-color:transparent;
+}
+
