@@ -282,3 +282,16 @@ textarea.contact-field{
     background-color:transparent;
 }
 
+.cart-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-head-item{
+    text-align: start;
+    border-bottom: 1px solid var(--darkgray); /*adiciona a linha da borda embaixo*/
+    padding-bottom: 6px;
+    text-transform: uppercase;
+
+}
+
