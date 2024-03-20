@@ -109,7 +109,7 @@ hr{
     padding: 15px 0;
 }
 
-.footer-container{
+.main-footer-container{
     display: flex; /*deixar tudo  na mesma linha*/
     align-items: center; /*alinha todos os elementos*/
     justify-content: space-between; /*colar nome de um lado e lista de icones do outro*/
@@ -297,7 +297,7 @@ textarea.contact-field{
 
 .second-col,
 .third-col{
-    width: 25%;
+    width: 30%;
 }
 
 .cart-product{
@@ -337,8 +337,8 @@ textarea.contact-field{
     color: var(--white);
     border: 0;
     border-radius: 5px;
-    padding: 4px;
-    margin-left: 5px;  
+    padding: 4px 2px;
+    margin-left: 2px;  
 }
 
 .remove-product-button:hover{
@@ -372,3 +372,12 @@ textarea.contact-field{
 .purchase-button:hover{
     filter: brightness(0.8);
 }
+
+/*Responsividade*/
+
+@media(max-width:725px){
+    .footer-container{
+    flex-direction: column;
+    }
+}
+    
